@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(167, 162, 162);
+}
+
+
+
+    ul{
+        
+        list-style: none;
+        
+    }
+    
+    
+    li{
+        list-style: none;
+        
+        
+    }
+    
+    
+    a{
+        color: rgb(17, 176, 115);
+        text-decoration: none;
+        &:hover{
+            color: crimson;
+        }
+}
+
+
+
+
+
+.alert {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+  
+.alert-success {
+    background-color: green;
+}
+  
+.alert-error {
+    background-color: red;
+}
+  
+.alert-info {
+    background-color: blue;
+}
+
+
+.imgList{
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+.imgFoto{
+    border-radius: 20px;
+    width: 100%;
+}
