@@ -21,14 +21,27 @@ class RecipeType extends AbstractType
     {
         $builder
             ->add('Title', TextType::class,[
-                'label' => "Titre",
+                'label' => 'recipeForm.title'
+                // 'label' => "Titre",
             ])
              ->add('slug', HiddenType::class)
-            ->add('Content',TextareaType::class)
-            ->add('imageName')
-            ->add('duration')
+             ->add('Content',TextareaType::class, [
+                 'label' => 'recipeForm.content'
+             ])
+
+            
+
+            ->add('imageName', TextareaType::class,[
+                'label' => 'recipeForm.imageName'
+            ])
+
+            ->add('duration', TextareaType::class,[
+                'label' => 'recipeForm.duration'
+            ])
+
             ->add('save',SubmitType::class, [
-                'label' => "Salva"
+                 'label' => 'recipeForm.save'
+                // 'label' => "Salva"
             ])
             ->addEventListener(FormEvents::PRE_SUBMIT, $this->autoSlug(...))
 

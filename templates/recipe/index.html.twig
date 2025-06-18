@@ -17,6 +17,8 @@
                     <div class = "imgList">
                     <img class="imgFoto" src = {{recipe.imageName}} width="250" height="370" >
                     </div> 
+        <p>By {{ recipe.user.firsname }} {{ recipe.user.lastname }}</p>
+                    
                     <p>Submitted {{ recipe.createdAt |ago(locale="fr") }}</p> 
                 </div>        
             {% else %}

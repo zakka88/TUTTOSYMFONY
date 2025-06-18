@@ -12,6 +12,7 @@
             <br>
             <h5>{{ recipe.content | nl2br }}</h5>
         </article>
+        <p>By {{ recipe.user.firsname }} {{ recipe.user.lastname }}</p>
         <small>Submitted {{ recipe.createdAt | date("d/m/Y")  }}</small> 
         <br><br>
         <small>Updated  {{ recipe.updatedAt | date("d/m/Y H:i") }}</small>
