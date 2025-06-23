@@ -21,14 +21,14 @@
              <a class="nav-link {{ app.current_route == 'app_recipe_create' ? 'active' : '' }}" href={{ path('app_recipe_create') }}>Add Recipe</a>
            </li>
            <li class="nav-item ">
-             <a class="nav-link {{ app.current_route == 'app_account' ? 'active' : '' }}" href="#">{{'navBar.account' |trans}}</a>
+             <a class="nav-link {{ app.current_route == 'home' ? 'active' : '' }}" href={{ path('home')}}>{{'navBar.account' |trans}}</a>
            </li>
            <li class="nav-item ">
              <a class="nav-link " href={{ path('app_logout') }}>Logout</a>
            </li>
            {% else %}
            <li class="nav-item ">
-             <a class="nav-link {{ app.current_route == 'app_register' ? 'active' : '' }}" href="#">Sign Up</a>
+             <a class="nav-link {{ app.current_route == 'app_register' ? 'active' : '' }}" href={{ path('app_register')}}>Sign Up</a>
            </li>
            <li class="nav-item ">
              <a class="nav-link {{ app.current_route == 'app_login' ? 'active' : '' }}" href= {{ path('app_login') }}>Login</a>

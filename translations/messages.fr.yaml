@@ -1,20 +1,24 @@
+recipeForm.title: Titre
+recipeForm.content: Contenu
+recipeForm.imageName: "Nom de l'image"
+recipeForm.duration: Durée
+recipeForm.save: Enregistrer
+navBar.home: acceuil
+navBar.recipes: 'liste de recette'
+navBar.addRecipe: 'aggiungi ricetta'
+navBar.account: 'mon account'
 
-  # Title: "Titre"
-  # Content: "Contenu"
-  # Image_name: "Nom de l'image"
-  # Duration: "Durée"
-  # Save: "Enregistrer"
-
-recipeForm:
-  title: "Titre"
-  content: "Contenu"
-  imageName: "Nom de l'image"
-  duration: "Durée"
-  save: "Enregistrer"
+registerTemplate.button: "S'enregistrer "
 
 
+registrationForm.firsname: Prénom
+registrationForm.lastname: Nom
+registrationForm.email: "Adresse électronique "
+registrationForm.password: " Mot depasse "
+registrationForm.agreeTerms: " Accepter les termzs"
 
-navBar:
-  home: "acceuil"
-  recipes: "liste de recette"
-  addRecipe: "aggiungi ricetta"
+
+
+
+
+

@@ -24,7 +24,7 @@ class Recipe
 
     #[ORM\Column(length: 255, unique: true)]
     #[Assert\NotBlank(message: "Titre obligatoire")]
-    #[Assert\Length(min: 10, max: 50,minMessage: "Minimum 10 caractères",maxMessage:"Maximum 50 caractères")]
+    #[Assert\Length(min: 10, max: 50)]
     #[InappropriateWords()]
     private ?string $Title = null;
 
@@ -32,16 +32,16 @@ class Recipe
     private ?string $slug = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
-     #[Assert\NotBlank(message: "Contenu obligatoire")]
-    #[Assert\Length(min: 20,minMessage: "Minimum 20 caractères")]
+     #[Assert\NotBlank()]
+    #[Assert\Length(min: 20)]
     private ?string $Content = null;
 
    
     use Timestampable;
 
     #[ORM\Column(nullable: true)]
-    #[Assert\Positive(message: "Vous devez introduire une durée positive")]
-    #[Assert\LessThan(1440,message: "Vous ne pouvez pas introduire de recette de plus de 24h")]
+    #[Assert\Positive()]
+    #[Assert\LessThan()]
     private ?int $duration = null;
 
     #[ORM\Column(length: 500, nullable: true)]
